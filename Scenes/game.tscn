@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d2n4xkj5nrnno"]
+
+[ext_resource type="PackedScene" uid="uid://q404ar0auaau" path="res://Scenes/ship.tscn" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://cf3qlj1gkougy" path="res://Scripts/game.gd" id="1_qxrlw"]
+
+[node name="Game" type="Node2D" unique_id=1076508823]
+script = ExtResource("1_qxrlw")
+
+[node name="Ship" parent="." unique_id=433360724 instance=ExtResource("1_ebmjs")]
+position = Vector2(960, 540)
+acceleration = 150.0
+
+[node name="Bullets" type="Node" parent="." unique_id=1824916458]
